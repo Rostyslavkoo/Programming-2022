@@ -1,0 +1,25 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int n,i;
+    cin >> n;
+    int a[n+5],b[n+5];
+    for(int i = 1; i<= n; i++){
+        a[i] = i;
+        cout << a[i];
+
+    }
+    cout << endl;
+    for(int i = 1; i<= n-2; i++){
+       b[i] = a[i + 1] + a[i + 2];
+      cout << b[i];
+    }
+    
+    
+    
+    
+    return 0;
+}
