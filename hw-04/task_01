@@ -4,6 +4,7 @@ using namespace std;
 
 int main()
 {
+ умова - https://github.com/Rostyslavkoo/Programming-2022/blob/main/hw-04/Screenshot%202022-10-18%20at%2022.59.57.png
     int n,i;
     cin >> n;
     int a[n+5],b[n+5];
