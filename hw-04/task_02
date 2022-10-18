@@ -5,7 +5,8 @@ using namespace std;
 #define arrLength 1005
 int
 main ()
-{
+{ 
+умова --- https://github.com/Rostyslavkoo/Programming-2022/blob/main/hw-04/Screenshot%202022-10-18%20at%2023.01.53.png
 
   long double a[arrLength];
   a[1] = 0.01;
