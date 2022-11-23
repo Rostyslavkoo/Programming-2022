@@ -1,0 +1,33 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+#define arrLength 1005
+int
+main ()
+{ 
+умова --- https://github.com/Rostyslavkoo/Programming-2022/blob/main/hw-04/Screenshot%202022-10-18%20at%2023.01.53.png
+
+  long double a[arrLength];
+  a[1] = 0.01;
+
+  for (int i = 2; i <= arrLength - 5; i++)
+    {
+      a[i] = sin (i + a[i - 1]);
+    }
+  int k = 0;
+  int sum = 0;
+  for (int i = 1; i <= arrLength; i = pow (2, k))
+    {
+      if (a[i] < 0.25)
+	{
+	  sum++;
+
+	}
+      k++;
+    }
+  cout << sum;
+
+
+  return 0;
+}
