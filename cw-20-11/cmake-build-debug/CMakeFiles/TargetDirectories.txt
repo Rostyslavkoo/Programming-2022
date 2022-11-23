@@ -1,0 +1,3 @@
+/Users/rostislavurdejcuk/Documents/university/Programming-2022/cw-20-11/cmake-build-debug/CMakeFiles/cw_20_11.dir
+/Users/rostislavurdejcuk/Documents/university/Programming-2022/cw-20-11/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/rostislavurdejcuk/Documents/university/Programming-2022/cw-20-11/cmake-build-debug/CMakeFiles/rebuild_cache.dir
