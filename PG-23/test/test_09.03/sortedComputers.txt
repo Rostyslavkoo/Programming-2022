@@ -1,0 +1,13 @@
+
+|| sorted computers by price ||
+	Firm: Acer, Price: 12000
+	Firm: HP, Price: 15000
+	Firm: Asus, Price: 18000
+	Firm: Dell, Price: 20000
+	Firm: Lenovo, Price: 22000
+
+|| Total price ||
+	Total Price: 87000
+
+|| Dell computers ||
+	Firm: Dell, Price: 20000
