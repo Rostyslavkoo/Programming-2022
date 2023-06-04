@@ -1,5 +1,0 @@
-Desktop HP 15000 i5
-Laptop Dell 20000 15.6 8
-Laptop Asus 18000 14 4
-Desktop Acer 12000 i3
-Laptop Lenovo 22000 13.3 16
