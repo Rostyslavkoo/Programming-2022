@@ -1,30 +1,68 @@
-#include <iostream>
+// Визначити шаблонну функцію, яка підраховує кількість
+// елементів, відмінних від вказаного i-го елемента в масиві. 
+// Передбачити перехоплення винятків при невірному значенні i.
 
-class Complex {
-private:
-    double real;
-    double imaginary;
+#include<iostream>
+#include<algorithm>
+#include<vector>
+#include<fstream>
+#include<sstream>
 
-public:
-    Complex(double r = 0.0, double i = 0.0) : real(r), imaginary(i) {}
+using namespace std;
 
-    Complex operator+(const Complex& other) {
-        Complex result;
-        result.real = real + other.real;
-        result.imaginary = imaginary + other.imaginary;
-        return result;
+template<typename T>
+int Func(vector<T> arr, T el)
+{
+
+        if(count(arr.begin(), arr.end(), el) == 0){
+            throw invalid_argument("element does not exist");
+        }
+
+        return arr.size() - count(arr.begin(), arr.end(), el);
+}
+
+int main()
+{
+    try {
+        ifstream file1("input.txt");
+        ofstream file2("output.txt");
+
+        vector<int> v1;
+        int diff;
+
+        while(!file1.eof())
+        {
+            int n;
+            file1 >> n;
+            for(int i = 0; i < n; i++)
+            {
+                int tmp;
+                file1 >> tmp;
+                v1.push_back(tmp);
+            }
+
+            file1 >> diff;
+        }
+
+//        vector<int> v1;
+//        int n;
+//        int diff;
+//        cout << "Enter vector size: ";
+//        cin >> n;
+//        for (int i = 0; i < n; i++) {
+//            int val;
+//            cout << "Enter vector el " << i << "\n";
+//            cin >> val;
+//            v1.push_back(val);
+//        }
+
+//        cout << "Enter diff: ";
+//        cin >> diff;
+        file2 << Func(v1, diff);
+        return 0;
     }
-
-    void display() {
-        std::cout << real << " + " << imaginary << "i" << std::endl;
+    catch(const invalid_argument& e)
+    {
+        cerr << e.what();
     }
-};
-
-int main() {
-    Complex c1(2.5, 3.5);
-    Complex c2(1.2, 0.8);
-    Complex c3 = c1 + c2;
-    c3.display(); // Результат: 3.7 + 4.3i
-
-    return 0;
 }

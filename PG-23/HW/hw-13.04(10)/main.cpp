@@ -31,7 +31,7 @@ int main()
     int int_arr[] = { 2, 6, 3, 2, 6, 4 };
     size_t int_size = sizeof(int_arr) / sizeof(int_arr[0]);
     //std::string int_arr[] = { "a", "b", "c", "d", "e", "f" };
-    std::vector<int> res= double_odd(int_arr, int_size);
+    std::vector<int> res = double_odd(int_arr, int_size);
 //  std::vector<std::string> res= double_odd(int_arr, int_size);
 
     for (size_t i = 0; i < res.size(); ++i)
